@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "saxsify"
+version = "0.1.0"
+description = ""
+authors = ["Paweł Ordyna <p.ordyna@hzdr.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scipy = "^1.14.0"
+numpy = ">=1.26"
+openpmd-api = "^0.15.2"
+numba = "^0.60.0"
+dask = "^2024.7.0"
+simplig = {git = "https://github.com/pordyna/simplig.git", rev = "v0.1.0"}
+tqdm = "^4.66.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.docformatter]
+recursive = true
+pre-summary-space = true
+wrap-summaries = 100
+wrap-descriptions = 100
